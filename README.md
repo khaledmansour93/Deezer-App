@@ -1,14 +1,13 @@
 # Deezer App
 
-React-Redux app using Deezer-API
+Music genres react-redux app using Deezer API
 
 -   [Tools](#tools)
 -   [Features](#features)
 -   [Getting started](#getting-started)
--   [Deploy](#deploy)
 -   [Tests](#start-tests)
 
-## Tools:
+## Tools
 
 -   create-react-app
 -   react-router-dom (navigation)
@@ -19,36 +18,33 @@ React-Redux app using Deezer-API
 -   Cypress (testing)
 -   Deezer API (api)
 
-## Features:
+## Features
 
--   User Auth using Deezer-API authentication
--   Listing a Genres Lists
--   Listing the related artists for every genre
+-   Displaying a genres list
+-   Displaying related artists for each genre
+-   User Authentication using Deezer API authentication
 
 ## Getting started
 
 -   download/clone the project
--   \$ cd deezer-app
--   \$ yarn && yarn start
+-   \$ cd Deezer-App
+-   \$ yarn
+-   \$ yarn start
 -   open url: localhost:3000
 
-## Deploy
 
-You can open deployed version on Heroku
-https://deezer-app.herokuapp.com/
-
-### Start tests
+## Tests
 
 To start tests you have to replace `PrivateRoute` to `Route` in `src/components/App.js`
-// tests does not include login!
+Note: tests does not include login!
 
 -   yarn test
 
-click `Run all specs` button
+Click `Run all specs` button
 
 ## Available routes
 
 -   `/` Welcome page, you have to login to continue
 -   `/genre` view genres list
--   `/genre/:id` when click on genre card in genres list view
--   `/genre/:id/artists` when click on show artists button in genre card
+-   `/genre/:id` when clicking on genre card in genres list page
+-   `/genre/:id/artists` when clicking on `Show Artists` button in genre card
